@@ -1,5 +1,4 @@
 body{
-  background-image: url(img/8cdde131-f98d-4c28-bcd2-0b8b9769a0eb.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -27,7 +26,7 @@ body{
   border: 2px solid;
   border-color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 1);
 
   
 
@@ -70,15 +69,15 @@ body{
   
   button{
       position: relative;
-      top: 160px;
+      top: 155px;
       margin-left: 150px;
-      border-style: outset;
+      border: none;
       background-color: rgb(255, 255, 255);
       font-size: 15px;
       height:35px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       cursor: pointer;
-      transition: 0.4s;
+      transition: 0.7s;
       border-radius: 15px ;
       width: 150px;
       margin-left: 120px;
@@ -86,8 +85,8 @@ body{
     
   }
   button:hover{
-      background-color: blue;
-      color: white;
+      background-color: rgba(75, 75, 153, 0.685);
+    
   }
 
 .link-login{
@@ -108,7 +107,7 @@ body{
   font-size: 13px;
 }
 .link-login a:hover{
-  color: #3e5586;
+  color: #3f5688b0;
 }
 
 }
