@@ -1,56 +1,131 @@
-    body, html {
-        height: 100%; /* Garante que o body ocupe toda a altura da tela */
-        margin: 0; /* Remove margens padrão */
-    }
-    a {
-      color: white;
-    }
-    body, html {
-      height: 100%; /* Garante que o corpo tenha altura total */
-      margin: 0; /* Remove a margem padrão do body */
-    }
+body{
+  background-image: url(img/8cdde131-f98d-4c28-bcd2-0b8b9769a0eb.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-    .container-login{
-        display: flex; /* Flexbox no contêiner pai */
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente */
-        height: 80%; /* Ocupa 100% da altura da tela */
-    
-    }
-    .login-div{
-      display: block;
-      width: 400px;
-      margin: 0 auto; /* Centraliza a div horizontalmente */
-      background-color: rgba(38, 46, 70, 0.521);
-      padding: 20px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  }
+.box {
+  width: 400px;
+  height: 410px;
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 1);
+
+  
+
+
+
+  .titulo{
       text-align: center;
-      font-size: 20px;
-      margin-top: 0 auto;
-      line-height: 0 auto;
-      border-radius: 10px;
-      
-    }
-    input{
-        border: 100px;
-        border-radius: 10px;
-        right: 10px;
-        width: 300px;
-        height: 20px
-    }
-    /* Estilos do rodapé */
+      color: white;
+      position: relative;
+      top: 20px;
+      margin-right: 25px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  
+  .inputs{
+    position: relative;
+    top: 68px;
+    text-align: center;
+
+  }
+  
+  .inputs input{
+    border-radius: 10px;
+    height: 48px;
+    width: 300px;
+    border: solid 2px;
+    margin: 4px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+}
+  .inputs input::placeholder{
+    color: white;
+    font-size: 14px;
+  }
+  .inputs input:focus{
+    border: solid 2px;
+  }
+  
+  button{
+      position: relative;
+      top: 160px;
+      margin-left: 150px;
+      border-style: outset;
+      background-color: rgb(255, 255, 255);
+      font-size: 15px;
+      height:35px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      cursor: pointer;
+      transition: 0.4s;
+      border-radius: 15px ;
+      width: 150px;
+      margin-left: 120px;
+
+    
+  }
+  button:hover{
+      background-color: blue;
+      color: white;
+  }
+
+.link-login{
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+.link-login p{
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.link-login a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+.link-login a:hover{
+  color: #3e5586;
+}
+
+}
+
 .footer {
   background-color: #222; /* Cor de fundo do rodapé */
   color: #fff; /* Cor do texto */
-  padding: 20px 0;
   text-align: center;
   font-size: 14px;
+  padding: 10px 0;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .footer-links {
   list-style: none;
@@ -81,10 +156,6 @@
 .social-media a:hover {
   color: #3e5994;
 }
-button{
-  border: 100px;
-  border-radius: 10px;
-  right: 10px;
-  width: 300px;
-  height: 20px
-}
+
+
+
