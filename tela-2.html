@@ -4,20 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela 2</title>
-    <link rel="stylesheet" href="telas.css">
+    
+   <link rel="stylesheet" href="telas.css">
 </head>
 <body>
-    <h1>Qual a ocasião que você ira se encontrar</h1>
-    
-    <div class="button-container">
-        <button onclick="escolher(1)" class="button">Trabalho</button>
-        <button onclick="escolher(2)"class="button">Passeio</button>
-        <button onclick="escolher(3)"class="button">Festa</button>
-        <button onclick="escolher(4)"class="button">Encontro</button>
-        <button onclick="escolher(5)"class="button">Evento Esportivo</button>
-    </div>
-    
+    <h1>Qual a ocasião que você irá se encontrar?</h1>
 
-<script src="tela-2.js"></script>
+    <div class="card-container">
+        <div class="card" onclick="escolher(1)">
+            <div class="card-front">
+                <h2>Trabalho</h2>
+            </div>
+            <div class="card-back">
+                <p>Roupas formais e elegantes.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(2)">
+            <div class="card-front">
+                <h2>Passeio</h2>
+            </div>
+            <div class="card-back">
+                <p>Roupas casuais e confortáveis.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(3)">
+            <div class="card-front">
+                <h2>Festa</h2>
+            </div>
+            <div class="card-back">
+                <p>Roupas descoladas e estilosas.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(4)">
+            <div class="card-front">
+                <h2>Encontro</h2>
+            </div>
+            <div class="card-back">
+                <p>Roupas para impressionar!</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(5)">
+            <div class="card-front">
+                <h2>Evento Esportivo</h2>
+            </div>
+            <div class="card-back">
+                <p>Roupas esportivas e práticas.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function escolher(opcao) {
+            const escolhas = [
+                "Você escolheu Trabalho.",
+                "Você escolheu Passeio.",
+                "Você escolheu Festa.",
+                "Você escolheu Encontro.",
+                "Você escolheu Evento Esportivo."
+            ];
+            alert(escolhas[opcao - 1]); // Exibe a escolha como alerta.
+        }
+    </script>
 </body>
 </html>
