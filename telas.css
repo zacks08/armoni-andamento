@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+h1{
+display: flex;
+justify-items: center;
+justify-content: center;
+}
+.button-container {
+    display: flex;
+    gap: 100px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte em telas pequenas */
+    justify-content: center; /* Centraliza os botões */
+}
+
+.button {
+    height: 400px;
+    width: 400px;
+    margin-top: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #adbcd1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #1f3574;
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.button:active {
+    transform: translateY(2px); /* Efeito de pressionamento ao clicar */
+}
+
+/* Responsividade: Quando a tela é menor que 600px, os botões ficam empilhados */
+@media (max-width: 600px) {
+
+   
+    .button-container {
+        flex-direction: column; /* Coloca os botões em uma coluna */
+    }
+}
