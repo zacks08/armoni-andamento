@@ -4,19 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela 3</title>
-    <link rel="stylesheet" href="telas.css">
+ <link rel="stylesheet" href="telas.css">
 </head>
 <body>
-    
-    <h1>Escolha uma opção na Tela 3</h1>
+    <h1>Como se encontra o dia?</h1>
 
-    
-    <div class="button-container">
-    <button onclick="escolher(1)"class="button">Frio</button>
-    <button onclick="escolher(2)"class="button">Calor</button>
-    <button onclick="escolher(3)"class="button">Chuvoso</button>
-    <button onclick="escolher(4)"class="button">Ameno</button>
-</div>
-<script src="tela-resultado.js"></script>
+    <div class="card-container">
+        <div class="card" onclick="escolher(1)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Frio</h2>
+                </div>
+                <div class="card-back">
+                    <p>Roupas quentes como casacos, suéteres e botas, 
+                        ideais para se proteger do frio.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(2)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Calor</h2>
+                </div>
+                <div class="card-back">
+                    <p>Peças leves como camisetas, 
+                        vestidos e sandálias para manter o frescor no calor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(3)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Chuvoso</h2>
+                </div>
+                <div class="card-back">
+                    <p>Jaquetas impermeáveis, 
+                        botas de chuva e um guarda-chuva para enfrentar o tempo úmido.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(4)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Ameno</h2>
+                </div>
+                <div class="card-back">
+                    <p>Roupas versáteis como blusas de manga longa, 
+                        cardigãs e calças confortáveis para temperaturas amenas.</p>
+                </div>
+            </div>
+        </div>
+
+    <script src="tela-resultado.js"></script>
+
+
 </body>
 </html>

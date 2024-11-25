@@ -4,17 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela 1</title>
-    <link rel="stylesheet" href="telas.css">
+ <link rel="stylesheet" href="telas.css">
 </head>
 <body>
-    <h1>Qual estilo você prefere?</h1>
-    <div class="button-container">
-    <button onclick="escolher(1)" class="button">Casual</button>
-    <button onclick="escolher(2)"class="button">Formal</button>
-    <button onclick="escolher(3)"class="button">Esportivo</button>
-    <button onclick="escolher(4)"class="button">Elegante</button>
-    <button onclick="escolher(5)"class="button">Moderno</button>
+    <h1>Qual estilo melhor combina com você?</h1>
+
+    <div class="card-container">
+        <div class="card" onclick="escolher(1)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Casual</h2>
+                </div>
+                <div class="card-back">
+                    <p>Look descontraído com jeans, camisetas e tênis para o dia a dia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(2)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Formal</h2>
+                </div>
+                <div class="card-back">
+                    <p>Roupa sofisticada, como camisas, 
+                        ternos e vestidos, para ocasiões elegantes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(3)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Esportivo</h2>
+                </div>
+                <div class="card-back">
+                    <p>Conforto e mobilidade com roupas e tênis
+                         voltados para atividades físicas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(4)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Elegante</h2>
+                </div>
+                <div class="card-back">
+                    <p>Look refinado com peças sofisticadas e acessórios, 
+                        perfeito para eventos formais.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="escolher(5)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Moderno</h2>
+                </div>
+                <div class="card-back">
+                    <p>Estilo atual e arrojado, com peças tendência e cortes modernos.</p>
+                </div>
+            </div>
+        </div>
     </div>
-<script src="tela-1.js"></script>
+    <script src="tela-1.js"></script>
 </body>
 </html>
