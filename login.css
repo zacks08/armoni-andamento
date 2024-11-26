@@ -1,6 +1,7 @@
 body{
   background-size: cover;
   background-position: center;
+  font-family: arial, poppins;
 }
 
 
@@ -20,48 +21,55 @@ body{
 
   }
 .box {
-  width: 400px;
-  height: 410px;
-  border-radius: 20px;
-  border: 2px solid;
-  border-color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 1);
-
+  width: 430px;
+  height: 450px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: rgb(231, 230, 230);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
   
-
-
-
-  .titulo{
+}
+  
+.titles{
       text-align: center;
-      color: white;
+      color: rgb(0, 0, 0);
       position: relative;
-      top: 20px;
-      margin-right: 25px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+      top: 45px;
+      text-align: left;
+      font-size: 15px;
+      font-weight: 10px;
+      
   }
+h1{
+  font-size: 25px;
+  font-weight: 1;
+  font-family: poppins;
+}
   
   .inputs{
     position: relative;
     top: 68px;
     text-align: center;
+    
 
   }
   
   .inputs input{
-    border-radius: 10px;
+    border-radius: 5px;
     height: 48px;
     width: 300px;
-    border: solid 2px;
     margin: 4px;
     outline: none;
-    background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid rgb(221, 221, 221);
 }
   .inputs input::placeholder{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 14px;
+    font-family: poppins;
+    padding: 10px;
+
   }
   .inputs input:focus{
     border: solid 2px;
@@ -72,7 +80,7 @@ body{
       top: 155px;
       margin-left: 150px;
       border: none;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(209, 208, 208);
       font-size: 15px;
       height:35px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -95,13 +103,13 @@ body{
   text-align: center;
 }
 .link-login p{
-  color: #fff;
+  color: #000000;
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .link-login a{
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 13px;
@@ -110,11 +118,11 @@ body{
   color: #3f5688b0;
 }
 
-}
+
 
 .footer {
   background-color: #222; /* Cor de fundo do rodapé */
-  color: #fff; /* Cor do texto */
+  color: #ffffff; /* Cor do texto */
   text-align: center;
   font-size: 14px;
   padding: 10px 0;
@@ -137,7 +145,7 @@ body{
 
 .footer-links a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   transition: color 0.3s;
 }
 
