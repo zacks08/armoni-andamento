@@ -17,6 +17,8 @@ body {
     
   .carousel-container {
     position: relative;
+    margin: 35%;
+    height: auto;
     width: 100%;
     max-width: 800px;
     overflow: hidden;
@@ -102,13 +104,9 @@ body {
   /* Responsividade */
   @media (max-width: 600px) {
     .caption {
-      font-size: 14px;
+      font-size: 200px;
       padding: 8px 15px;
     }
   
-    .carousel-button {
-      font-size: 20px;
-      padding: 8px;
-    }
+
   }
-  

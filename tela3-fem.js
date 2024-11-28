@@ -9,7 +9,8 @@ function moveCarousel(direction) {
 
   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
+
+
 function escolher(opcao) {
-    localStorage.setItem("escolha2", opcao); // Armazena a escolha
-    window.location.href = "tela3-mas.html";    // Vai para a próxima tela
-}
+  localStorage.setItem("escolha3", opcao); // Armazena a escolha
+  window.location.href = "tela-resultado-fem.html"; }   // Vai para a próxima tela
