@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela 1</title>
- <link rel="stylesheet" href="telas.css">
+    <title>Escolha seu gênero</title>
+    <link rel="stylesheet" href="mas-fem.css">
 </head>
 <body>
     <h1>Escolha seu gênero:</h1>
 
-    <div class="card-container">
-        <div class="card" onclick="escolhermas(1)">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h2>Masculino</h2>
-                </div>
-                <div class="card-back">
-                    <p>Look descontraído com jeans, camisetas e tênis para o dia a dia.</p>
-                </div>
+    <div class="button-container">
+        <div class="button" onclick="escolher(1)">
+            <img src="img/TUW4dqQm.jpeg" alt="Masculino">
+            <div class="overlay">
+                <span>Masculino</span>
             </div>
         </div>
 
-        <div class="card" onclick="escolherfem(2)">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h2>Feminino</h2>
-                </div>
-
+        <div class="button" onclick="escolher(2)">
+            <img src="img/Camiseta slim algodão sólido.jpeg" alt="Feminino">
+            <div class="overlay">
+                <span>Feminino</span>
             </div>
         </div>
-        </div>
-    <script src="telamasefem.js"></script>
+    </div>
+
+<script src="telamasfem.js"></script>
 </body>
 </html>
