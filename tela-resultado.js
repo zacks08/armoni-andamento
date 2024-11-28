@@ -216,6 +216,7 @@ function escolher(opcao) {
 
 
 
+
  // Exibe o produto final cujo esse produto vai ser uma 
  //entidade possuindo id imagem descriçao e podendo ser editavel 
  //pelo fato de ser uma entidade composta por outras entidades assinado por isaac pra nao falarem q foi o gpt q fez seu merdas
