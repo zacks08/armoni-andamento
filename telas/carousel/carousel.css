@@ -1,0 +1,54 @@
+/* Estilos do container do carrossel */
+.carousel-container {
+    width: 150%;
+    max-width: 600px;
+    height: 100;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Área do carrossel */
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+    cursor: grab;
+}
+
+/* Itens do carrossel */
+.carousel-item {
+    min-width: 33.33%; /* Para mostrar 3 itens */
+    height: 300px;
+    background-color: #007bff;
+    margin-top:50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Indicadores (bolinhas) */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 12px;
+    margin-top: 30%;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007bff;
+}
