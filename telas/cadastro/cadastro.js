@@ -1,3 +1,3 @@
 function acessar() {  
-window.location.href = "login.html"; // Vai para o resultado
+window.location.href = "/telas/login/login.html"; // Vai para o resultado
 }
