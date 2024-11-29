@@ -1,0 +1,99 @@
+    /* Estilo do corpo */
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+        background: url('https://source.unsplash.com/1600x900/?stars,night') no-repeat center center/cover;
+        transition: background 1s ease;
+    }
+
+    /* Título principal */
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #FFD700; /* Dourado para representar o sol */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Container dos cartões */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 800px;
+    }
+
+    /* Cartões */
+    .card {
+        width: 200px;
+        height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+        perspective: 1000px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Frente e verso do cartão */
+    .card-front, .card-back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        height: 100%;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    /* Ícones nos botões */
+    .card-front img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+    }
+
+    /* Transições de hover */
+    body.hover-dia {
+        background: linear-gradient(to bottom, #FFD700, #FFA500); /* Gradiente estilo amanhecer */
+    }
+
+    body.hover-noite {
+        background: url('https://source.unsplash.com/1600x900/?moon,night') no-repeat center center/cover;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+        }
+
+        .card-front img {
+            width: 80px;
+            height: 80px;
+        }
+    }
