@@ -1,65 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela 3</title>
- <link rel="stylesheet" href="telas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilo</title>
+  <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
-    <h1>Como se encontra o dia?</h1>
-
-    <div class="card-container">
-        <div class="card" onclick="escolher(1)">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h2>Frio</h2>
-                </div>
-                <div class="card-back">
-                    <p>Roupas quentes como casacos, suéteres e botas, 
-                        ideais para se proteger do frio.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" onclick="escolher(2)">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h2>Calor</h2>
-                </div>
-                <div class="card-back">
-                    <p>Peças leves como camisetas, 
-                        vestidos e sandálias para manter o frescor no calor.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" onclick="escolher(3)">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h2>Chuvoso</h2>
-                </div>
-                <div class="card-back">
-                    <p>Jaquetas impermeáveis, 
-                        botas de chuva e um guarda-chuva para enfrentar o tempo úmido.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card" onclick="escolher(4)">
-            <div class="card-inner">
-                <div class="card-front">
-                    <h2>Ameno</h2>
-                </div>
-                <div class="card-back">
-                    <p>Roupas versáteis como blusas de manga longa, 
-                        cardigãs e calças confortáveis para temperaturas amenas.</p>
-                </div>
-            </div>
-        </div>
-
-    <script src="tela-resultado.js"></script>
 
 
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item"onclick="escolher(1)">
+        <img src="img/5e056a1dfb8425a9643ad4aa78b18ae6.jpg"alt="Slide 1">
+    
+      </div>
+      <div class="carousel-item"onclick="escolher(2)">
+        <img src="img/UvZbYdK5.jpeg"alt="Slide 2">
+
+      </div>
+      <div class="carousel-item"onclick="escolher(3)">
+        <img src="img/DpztAL2b.jpeg"alt="Slide 3">
+
+
+      </div>
+    </div>
+    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+
+  <script src="tela3-mas.js"></script>
 </body>
 </html>
